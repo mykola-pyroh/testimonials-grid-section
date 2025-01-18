@@ -1,6 +1,6 @@
-export default function Card({photo, name, status, title, comment}: {photo: string, name: string, status: string, title: string, comment: string}) {
+export default function Card({id, photo, name, status, title, comment}: {id: string, photo: string, name: string, status: string, title: string, comment: string}) {
     return (
-        <article>
+        <article className={id}>
             <img src={photo} alt={`${name} photo`} />
             <p>{name}</p>
             <p>{status}</p>
