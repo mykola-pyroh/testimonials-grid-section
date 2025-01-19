@@ -8,16 +8,28 @@
         flex-direction: row;
     }
     &__userPhoto {
-
+        border: 2px solid variable.$moderateViolet;
+        border-radius: 50%;
+        height: 28px;
+        width: 28px;
     }
     &__userDetail {
-
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 0 0 0 16px;
     }
     &__userName {
         @include mixin.typography(barlow-medium);
+        line-height: 13px;
+        color: variable.$white;
     }
     &__userStatus {
-
+        @include mixin.typography(barlow-medium);
+        font-size: 11px;
+        line-height: 11px;
+        opacity: 50%;
+        color: variable.$white;
     }
     &__userTitle {
 
