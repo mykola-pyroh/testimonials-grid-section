@@ -1,6 +1,12 @@
+@use './styles/_variables' as variable;
+
 * {
     box-sizing: border-box;
     font-size: 13px;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: variable.$lightGray;
 }
