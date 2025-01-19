@@ -1,3 +1,7 @@
+@use '../../styles/variables' as variable;
+@use '../../styles/typography' as typhography;
+@use '../../styles/mixins' as mixin;
+
 .userCard {
     &__userInfo {
         display: flex;
@@ -10,7 +14,7 @@
 
     }
     &__userName {
-
+        @include mixin.typography(barlow-medium);
     }
     &__userStatus {
 
